@@ -1,0 +1,46 @@
+﻿
+@{
+    ViewData["Title"] = "UserProfile";
+    Layout = "~/Views/Shared/_AppLayout.cshtml";
+}
+
+<div class="form-signin">
+    <div class="col-sm-9">
+
+        <div class="card hovercard">
+            <div class="cardheader">
+
+            </div>
+            <div class="avatar">
+                <img alt="" src="https://upload.wikimedia.org/wikipedia/commons/4/4a/Profil_licnosti.png">
+            </div>
+            <div class="info">
+                <div class="title">
+                    <a target="_blank" href="javascript:void(0);" id="div-name">Script Eden</a>
+                </div>
+                <div class="desc" id="div-email">Passionate designer</div>
+                <div class="desc" id="div-role">Curious developer</div>
+            </div>
+            <div class="bottom">
+                <a class="btn btn-primary btn-twitter btn-sm" href="javascript:void(0);">
+                    <i class="fa fa-twitter"></i>
+                </a>
+                <a class="btn btn-danger btn-sm" rel="publisher"
+                   href="javascript:void(0);">
+                    <i class="fa fa-google-plus"></i>
+                </a>
+                <a class="btn btn-primary btn-sm" rel="publisher"
+                   href="javascript:void(0);">
+                    <i class="fa fa-facebook"></i>
+                </a>
+            </div>
+        </div>
+    </div>
+</div>
+@section styles {
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+    <link rel="stylesheet" href="~/css/user-profile.css">
+}
+@section scripts {
+    <script src="~/scripts/Authentication/user-profile.js"></script>
+}

@@ -1,0 +1,33 @@
+﻿<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="~/images/logo-conutry.png">
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+    <script src="~/scripts/common.js"></script>
+    <script src="~/scripts/authed-nav-menu.js"></script>
+    @RenderSection("styles", false);
+</head>
+<body>
+    <div id="div-authed-nav-menu">
+    </div>
+    <div class="container" style="margin-top:60px;">
+        <div id="div-child-body" style="display:none;">
+            @RenderBody()
+        </div>
+        @RenderSection("scripts", false)
+    </div>
+    <div class="site-loader" id="dvLoader">
+        <div class="loader-content">
+            <i class="fa fa-circle-o-notch fa-spin" style="font-size:35px;"></i>
+            <p style="font-size: 13px">Please wait... </p>
+        </div>
+    </div>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/css/bootstrap.min.css" />
+    <link href="~/css/web-app.css" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/js/bootstrap.min.js"></script>    
+</body>
+</html>

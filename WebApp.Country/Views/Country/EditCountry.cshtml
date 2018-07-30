@@ -1,0 +1,83 @@
+﻿
+@{
+    ViewData["Title"] = "EditCountry";
+    Layout = "~/Views/Shared/_AppLayout.cshtml";
+}
+
+<h2 class="text-center mb-4">Edit Country</h2>
+<form class="form-signin box">
+    <div class="form-row">
+        <div class="form-group col-md-6">
+            <label for="input-name">Country name</label>
+            <input type="text" class="form-control" id="input-name" placeholder="Country name">
+        </div>
+        <div class="form-group col-md-6">
+            <label for="input-nativename">Native name</label>
+            <input type="text" class="form-control" id="input-nativename" placeholder="Native name">
+        </div>
+    </div>
+    <div class="form-row">
+        <div class="form-group col-md-6">
+            <label for="input-capital">Capital</label>
+            <input type="text" class="form-control" id="input-capital" placeholder="Capital">
+        </div>
+        <div class="form-group col-md-3">
+            <label for="input-alphatwocode">Alpha Two Code</label>
+            <input type="text" class="form-control" id="input-alphatwocode" placeholder="Alpha Two Code">
+        </div>
+        <div class="form-group col-md-3">
+            <label for="input-alphathreecode">Alpha Three Code</label>
+            <input type="text" class="form-control" id="input-alphathreecode" placeholder="Alpha Three Code">
+        </div>
+    </div>
+    <div class="form-row">
+        <div class="form-group col-md-6">
+            <label for="input-region">Region</label>
+            <input type="text" class="form-control" id="input-region" placeholder="Region">
+        </div>
+        <div class="form-group col-md-6">
+            <label for="input-subregion">SubRegion</label>
+            <input type="text" class="form-control" id="input-subregion" placeholder="Sub Region">
+        </div>
+    </div>
+    <label for="div-chk-curreincies">Currencies</label>
+    <div class="box mb-3" style="padding: 8px !important;">
+        <div class="col-sm-12">
+            <div id="div-chk-curreincies" class="checkbox">
+            </div>
+        </div>
+    </div>
+    <label for="div-chk-languages">Languages</label>
+    <div class="box mb-3" style="padding: 8px !important;">
+        <div class="col-sm-12">
+            <div id="div-chk-languages" class="checkbox">
+            </div>
+        </div>
+    </div>
+    <div class="alert alert-success" role="alert" id="alert-error" style="display:none;">
+        Please enter country name
+    </div>
+    <button type="submit" id="btn-edit" class="btn btn-primary">Submit</button>
+</form>
+@section styles{
+    <style>
+        .form-signin {
+            width: 100%;
+            max-width: 65%;
+            padding: 15px;
+            margin: auto;
+            font-size: 12px;
+        }
+
+        .box {
+            padding: 20px !important;
+        }
+
+        .form-control {
+            font-size: 12px !important;
+        }
+    </style>
+}
+@section scripts {
+    <script src="~/scripts/edit-country.js"></script>
+}

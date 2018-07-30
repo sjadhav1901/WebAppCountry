@@ -1,0 +1,17 @@
+﻿
+@{
+    ViewData["Title"] = "SyncCountries";
+    Layout = "~/Views/Shared/_AppLayout.cshtml";
+}
+<h2 class="text-center mb-3">Sync Country Database</h2>
+<div class="jumbotron" style="padding: 20px;text-align: center;font-size: 20px;">
+    <div id="div-sync">
+        <div class="sync-loader-page">
+            <p style="font-size:20px">
+                Please click on the below button to start synchronization. Please be patient while your country database is being synchronized. <br />
+                <small>Do not "close the window" or press "refresh" or "browser back/forward button"</small>
+            </p>
+            <a href="/synccountries/start" class="btn btn-md btn-primary">Start Synchronization...</a>
+        </div>
+    </div>
+</div>

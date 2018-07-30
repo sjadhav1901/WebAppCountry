@@ -1,0 +1,29 @@
+﻿
+@{
+    ViewData["Title"] = "BeginSyncCountries";
+    Layout = "~/Views/Shared/_AppLayout.cshtml";
+}
+
+<div class="site-loader" id="div-sync">
+    <div class="loader-content">
+        <p style="font-size:25px">
+            Please be patient while your country database is being synchronized. <br />
+            <small style="font-size: 15px">Do not "close the window" or press "refresh" or "browser back/forward button"</small>
+        </p>
+        <img src="https://i.pinimg.com/originals/fe/24/ae/fe24ae50007b9d45aefeb5594c020efb.gif" alt="" style="width: 80px;"><br>
+        <p style="font-size: 13px">Please wait... </p>
+    </div>
+</div>
+
+<div id="div-sync-alert" class="jumbotron" style="padding: 20px;text-align: center;font-size: 20px;display:none;">
+    <div>
+        <div class="sync-loader-page">
+            <p id="p-alert">
+            </p>
+            <button class="btn btn-md btn-primary" onclick="return RediectToListing();" type="submit">View Countries</button>
+        </div>
+    </div>
+</div>
+@section scripts {
+    <script src="~/scripts/CMS/sync-countries.js"></script>
+}
